@@ -29,3 +29,38 @@ fn add(i: i32, j: i32) -> i32 {
     i + j
 }
 ```
+| 运算符 | 说明                |
+|--------|--------------------|
+| &      | 位与，相同位置均为1时则为1，否则为0            |
+| \|     | 位或，相同位置只要有1时则为1，否则为0            |
+| ^      | 异或，相同位置不相同则为1，相同则为0            |
+| !      | 位非，把位中的0和1相互取反，即0置为1，1置为0     |
+| <<     | 左移，所有位向左移动指定位数，右位补0           |
+| >>     | 右移，所有位向右移动指定位数，带符号移动（正数补0，负数补1）  |
+
+```rust
+fn main() {
+    // 二进制为00000010
+    let a:i32 = 2;
+    // 二进制为00000011
+    let b:i32 = 3;
+
+    println!("(a & b) value is {}", a & b);
+
+    println!("(a | b) value is {}", a | b);
+
+    println!("(a ^ b) value is {}", a ^ b);
+
+    println!("(!b) value is {} ", !b);
+
+    println!("(a << b) value is {}", a << b);
+
+    println!("(a >> b) value is {}", a >> b);
+
+    let mut a = a;
+    // 注意这些计算符除了!之外都可以加上=进行赋值 (因为!=要用来判断不等于)
+    a <<= b;
+    println!("(a << b) value is {}", a);
+}
+```
+#### [as转化](https://course.rs/advance/into-types/converse.html)
