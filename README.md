@@ -64,3 +64,16 @@ fn main() {
 }
 ```
 #### [as转化](https://course.rs/advance/into-types/converse.html)
+#### 进制
+    二进制（Binary）：
+        表示方法：0b 或 0B 开头。
+        例子：0b1010 表示进制数 10。
+    八进制（Octal）：
+        表示方法：0o 或 0O 开头。
+        例子：0o17 表示十进制数 15。
+    十进制（Decimal）：
+        没有特殊前缀，直接写数字。
+        例子：42 表示十进制数 42。
+    十六进制（Hexadecimal）：
+        表示方法：0x 或 0X 开头。
+        例子：0x1A 表示十进制数 26。
