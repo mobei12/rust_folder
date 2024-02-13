@@ -12,4 +12,12 @@ fn main() {
     let a_u16 = 1i32 - 2;
     println!("0011 AND 0101 is {:04b}", 0b0011u32 & 0b0101);
     println!("'a' as u16: {}", a_u16);
+    let c1 = '中';//字符
+    let c1 = "中";//字符串
+    print_char(c1);
+}
+// 修改一行让代码正常打印
+
+fn print_char(c : char) {
+    println!("{}", c);
 }
