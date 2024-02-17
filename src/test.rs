@@ -1,4 +1,3 @@
-
 pub mod test {
     pub fn test_add(i: i32, j: i32) -> i32 {
         // 返回相加值，这里可以省略return
@@ -65,7 +64,27 @@ pub mod test {
             println!("Ten is less than one hundred.");
         }
     }
-    pub fn num_test(){
+    pub fn basic_test() {
+        /*  let a_u16 = 1i32 - 2;
+        println!("0011 AND 0101 is {:04b}", 0b0011u32 & 0b0101);
+        println!("'a' as u16: {}", a_u16);
+        let c1 = '中';//字符
+        let c1 = "中";//字符串
+        //该语句块是表达式的原因是：它的最后一行是表达式，返回了 x + 1 的值，注意 x + 1 不能以分号结尾，否则就会从表达式变成语句， 表达式不能包含分号
+         let y = {
+            let x = 3;
+            x + 1
+        };
+        println!("The value of y is: {}", y);//4
+        */
+        assert_eq!(print_char(), ())
+    }
+    fn print_char() {
+        let y = {
+            let x = 3;
+            x + 1
+        };
 
+        println!("The value of y is: {}", y);
     }
 }
